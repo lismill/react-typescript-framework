@@ -1,1 +1,1 @@
-declare module 'antd';
+declare module "antd";
