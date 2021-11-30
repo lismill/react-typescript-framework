@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Config
+
+- [x] 弹出 eject 配置
+- [x] 使用 @ 符号代替 src 目录
+- [x] antd & sass
+
 ## Available Scripts
 
 In the project directory, you can run:
