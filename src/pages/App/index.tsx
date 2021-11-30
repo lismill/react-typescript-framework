@@ -1,10 +1,11 @@
-import React, { FC } from 'react';
-import { Button } from 'antd';
-import './index.scss'
+import { Card } from "antd";
+import "./index.scss";
 
-const App: FC = () => (
+const App = () => (
   <div className="App">
-    <Button type="primary">Button</Button>
+    <Card size="small" title="Route Link">
+      Route Link
+    </Card>
   </div>
 );
 
