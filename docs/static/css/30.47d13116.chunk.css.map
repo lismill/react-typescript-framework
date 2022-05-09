@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/30.47d13116.chunk.css","mappings":"AACE,2BACE","sources":["components/TableEdit/index.scss"],"sourcesContent":[".table-edit {\n  .ant-form-item {\n    margin-bottom: 0;\n  }\n}\n"],"names":[],"sourceRoot":""}
