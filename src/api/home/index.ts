@@ -9,7 +9,7 @@ import request from "../../utils/axios";
 
 // 获取首页配置
 export const GetHome = (params: any) => {
-  return request.get("http://yapi.syy.dongchali.cn/mock/730/home/list", { params });
+  return request.get("https://lismill.usemock.com/table/list", { params });
 };
 
 // 设置首页配置
