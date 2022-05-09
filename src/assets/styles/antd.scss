@@ -1,0 +1,98 @@
+// 去除左侧菜单上边距4px
+.ant-menu {
+  a:hover {
+    text-decoration: none;
+  }
+}
+// 左侧菜单折叠后宽度
+.ant-menu.ant-menu-inline-collapsed {
+  width: 60px;
+}
+
+.ant-menu-vertical .ant-menu-item:not(:last-child),
+.ant-menu-vertical-left .ant-menu-item:not(:last-child),
+.ant-menu-vertical-right .ant-menu-item:not(:last-child),
+.ant-menu-inline .ant-menu-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+.ant-menu-vertical .ant-menu-item::after,
+.ant-menu-vertical-left .ant-menu-item::after,
+.ant-menu-vertical-right .ant-menu-item::after,
+.ant-menu-inline .ant-menu-item::after {
+  // border-radius: 0 4px 4px 0;
+  border-right: 4px solid #1a73e8;
+}
+.ant-menu-item .ant-menu-item-icon + span,
+.ant-menu-submenu-title .ant-menu-item-icon + span,
+.ant-menu-item .anticon + span,
+.ant-menu-submenu-title .anticon + span {
+  margin-left: 10px;
+}
+
+// 设置菜单样式
+.ant-menu,
+.ant-menu-sub,
+.ant-menu-inline {
+  color: #ffffff;
+  background-color: #1c1e20 !important;
+}
+// 设置子菜单展开样式
+.ant-menu-submenu > .ant-menu {
+  background-color: #1c1e20 !important;
+}
+.ant-menu-item a,
+.ant-menu-submenu-arrow {
+  color: #ffffff;
+}
+// 选中菜单状态
+.ant-menu-item-selected {
+  background-color: #1a73e8 !important;
+  a,
+  span,
+  .ant-menu-item-icon {
+    color: #ffffff !important;
+  }
+}
+// 设置未选中菜单项鼠标滑过样式
+.ant-menu-item-active {
+  background-color: #1a73e8 !important;
+  color: #ffffff !important;
+  a,
+  span,
+  .ant-menu-item-icon {
+    color: #ffffff !important;
+  }
+}
+.ant-menu-item:active,
+.ant-menu-submenu-title:active {
+  background-color: #1a73e8 !important;
+  color: #ffffff !important;
+}
+.ant-menu-dark .ant-menu-item-active,
+.ant-menu-dark .ant-menu-item:hover,
+.ant-menu-dark .ant-menu-submenu-active,
+.ant-menu-dark .ant-menu-submenu-open,
+.ant-menu-dark .ant-menu-submenu-selected,
+.ant-menu-dark .ant-menu-submenu-title:hover {
+  color: #1a73e8 !important;
+}
+.ant-menu-inline > .ant-menu-item,
+.ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title,
+.ant-menu-vertical-left > .ant-menu-item,
+.ant-menu-vertical-left > .ant-menu-submenu > .ant-menu-submenu-title,
+.ant-menu-vertical-right > .ant-menu-item,
+.ant-menu-vertical-right > .ant-menu-submenu > .ant-menu-submenu-title,
+.ant-menu-vertical > .ant-menu-item,
+.ant-menu-vertical > .ant-menu-submenu > .ant-menu-submenu-title,
+.ant-menu-sub.ant-menu-inline > .ant-menu-item,
+.ant-menu-sub.ant-menu-inline > .ant-menu-submenu > .ant-menu-submenu-title {
+  height: 41px;
+  line-height: 41px;
+}
+
+.ant-drawer-header {
+  padding: 16px;
+}
+.ant-drawer-close {
+  margin-right: 6px;
+}

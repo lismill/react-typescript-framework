@@ -1,0 +1,41 @@
+.custom-table-search-card {
+  .ant-card-body {
+    padding: 0 24px 24px 24px;
+  }
+  .ant-form-item,
+  .ant-space {
+    margin: 24px 0 0 0;
+  }
+}
+
+.custom-table-footer {
+  transition: all 0.25s;
+  &.fixed {
+    position: fixed;
+    z-index: 999;
+    height: 56px;
+    line-height: 56px;
+    bottom: -16px;
+    right: 15px;
+    padding: 0 24px;
+    background-color: #ffffff;
+    border-top: 1px solid #eceef2;
+  }
+}
+
+.table-choose-modal .ant-modal-content {
+  .ant-modal-body {
+    padding-top: 12px;
+  }
+  .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis,
+  .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis {
+    position: relative;
+    top: -30px;
+  }
+  .ant-card-bordered {
+    border: none;
+  }
+  .ant-card-body {
+    padding: 0 16px 16px 16px;
+  }
+}

@@ -6,5 +6,6 @@
   "files.associations": {
     "*.ts": "javascriptreact",
     "*.tsx": "javascriptreact",
-  }
+  },
+  "javascript.validate.enable": false
 }

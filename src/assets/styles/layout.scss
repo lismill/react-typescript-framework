@@ -1,0 +1,109 @@
+.layout-header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  justify-content: space-between;
+  height: 56px;
+  line-height: 56px;
+  background-color: #1c1e20;
+  color: #ffffff;
+  border-bottom: 1px solid #eceef2;
+  box-shadow: 0 1px 8px 0 rgba(29, 35, 41, 0.03);
+  .left {
+    .logo {
+      transition: all 0.3s;
+    }
+    a,
+    span {
+      color: #ffffff !important;
+    }
+  }
+  .right {
+    margin-right: 20px;
+    .username {
+      cursor: pointer;
+      font-weight: 600;
+      line-height: 32px;
+    }
+    .username {
+      margin-left: 8px;
+    }
+  }
+}
+// 底部
+.layout-footer {
+  display: flex;
+  padding-top: 56px;
+  height: calc(100vh);
+  overflow: hidden;
+  // 底部 - 左侧
+  .layout-footer-left {
+    position: relative;
+    transition: all 0.25s;
+    background-color: #1c1e20;
+    z-index: 999;
+    margin-top: -56px;
+    box-shadow: 0 0 8px 0 rgba(29, 35, 41, 0.05);
+    // 左侧 logo
+    .logo {
+      height: 55px;
+      line-height: 55px;
+      margin-left: 20px;
+      font-size: 19px;
+      font-weight: 600;
+      overflow: hidden;
+      color: #ffffff;
+      transition: all 0.3s;
+      &.center {
+        margin-left: 0;
+        text-align: center;
+      }
+      &:not(.center) {
+        width: 170px;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+    }
+    // 折叠按钮
+    .collapsed {
+      position: absolute;
+      z-index: 999;
+      right: -8px;
+      bottom: 33px;
+      width: 32px;
+      text-align: center;
+      cursor: pointer;
+      color: #464646;
+      background-color: #ffffff;
+      box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.15);
+      border-radius: 1px;
+      &:hover {
+        background-color: #fefefe;
+        box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.25);
+      }
+    }
+    // 左侧菜单
+    ul.ant-menu.ant-menu-root {
+      height: 100vh;
+      background-color: #ffffff;
+    }
+  }
+  // 底部 - 右侧
+  .layout-footer-right {
+    flex: 1;
+    margin: 0 14px 0 20px;
+    .container {
+      & > div {
+        padding-top: 20px;
+      }
+    }
+  }
+}
+.layout-container-right .container {
+  background-color: #ffffff;
+  min-height: 100vh;
+}

@@ -1,3 +1,10 @@
+/*
+ * @Description:
+ * @Author: Lean
+ * @Date: 2022-03-08 19:52:08
+ * @LastEditTime: 2022-03-11 10:03:08
+ * @FilePath: \create-react-app-typescript\src\react-app-env.d.ts
+ */
 /// <reference types="node" />
 /// <reference types="react" />
 /// <reference types="react-dom" />
@@ -47,9 +54,7 @@ declare module "*.webp" {
 declare module "*.svg" {
   import * as React from "react";
 
-  export const ReactComponent: React.FunctionComponent<
-    React.SVGProps<SVGSVGElement> & { title?: string }
-  >;
+  export const ReactComponent: React.FunctionComponent<React.SVGProps<SVGSVGElement> & { title?: string }>;
 
   const src: string;
   export default src;
@@ -69,3 +74,6 @@ declare module "*.module.sass" {
   const classes: { readonly [key: string]: string };
   export default classes;
 }
+
+declare module "nprogress";
+declare module "loadsh";
